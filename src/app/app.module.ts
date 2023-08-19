@@ -5,15 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {RouterModule} from '@angular/router';
 import { FavoritesViewComponent } from './favorites-view/favorites-view.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FavoriteCardComponent} from './favorite-card/favorite-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FavoritesViewComponent
+    FavoritesViewComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FavoriteCardComponent
   ],
   bootstrap: [AppComponent]
 })
